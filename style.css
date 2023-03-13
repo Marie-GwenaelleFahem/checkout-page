@@ -156,6 +156,7 @@ aside {
 }
 
 .cart {
+    padding-top: 15px;
     width: 383px;
     height: 535px;
     border-radius: 10px;
@@ -212,6 +213,7 @@ aside {
     background-color: #E0E0E0;
     width: 21px;
     height: 21px;
+    cursor: pointer;
 }
 
 .item-quantity input {
@@ -222,4 +224,22 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.cart-total {
+    margin-top: 90px;
+}
+
+.shipping-fees {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font-weight: 600;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font-weight: 600;
 }
