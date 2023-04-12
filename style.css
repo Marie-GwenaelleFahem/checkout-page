@@ -243,3 +243,76 @@ input::-webkit-inner-spin-button {
     padding: 10px 40px;
     font-weight: 600;
 }
+
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+
+    header {
+        margin: 20px 20px;
+    }
+
+    section {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        margin: 0;
+    }
+
+    .form {
+        margin: 5px 6px 5px 0;
+        width: 100%;
+    }
+
+    .info-user {
+        margin: 10px 5px;
+    }
+
+    .info-user p {
+        margin: 4px 0;
+    }
+
+    .form h2 {
+        margin: 4px 4px;
+    }
+
+    .form-input {
+        margin: 0;
+        width: 100%;
+    }
+
+    .cart {
+        margin: 5px 4px;
+    }
+
+    .location {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .country, .zip-code {
+        width: 80%;
+    }
+
+    .validate {
+        width: 98%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
