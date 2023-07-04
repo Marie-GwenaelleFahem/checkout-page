@@ -223,6 +223,10 @@ aside {
     font-size: 15px;
 }
 
+.item-quantity span {
+    display: none;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -305,15 +309,23 @@ input::-webkit-inner-spin-button {
     }
 
     .location {
-        display: flex;
-        justify-content: space-evenly;
+        margin: 10px 10px;
+        /* display: flex;
+        justify-content: space-evenly; */
+        width: 95%;
+        gap: 10px;
     }
 
     .country, .zip-code {
         width: 80%;
     }
 
+    .save {
+        margin: 15px 10px;
+    }
+
     .validate {
+        margin-bottom: 20px;
         width: 98%;
         display: flex;
         justify-content: flex-end;
