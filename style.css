@@ -88,20 +88,64 @@ section {
 }
 
 .country-choice {
-    display: none;
+    padding: 10px 5px;
+    width: 80%;
+    border: solid 1px #828282 ;
+    border-radius: 8px;
     background-color: #ffffff;
 }
 
-.select-country-btn {
+.country-form {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.btn-select-country {
     width: 23px;
     height: 23px;
     border: none;
     border-radius: 4px;
 }
 
-.select-country-btn img {
+.country-form span {
+    position: absolute;
+    left: 25px;
+}
+
+.btn-select-country img {
     width: 23px;
     height: 23px;
+    cursor: pointer;
+}
+
+#cities {
+    display: flex;
+    flex-direction: column;
+}
+
+.country-choice {
+    width: 100%;
+    padding: 10px 30px;
+    border: none;
+    color: #333333;
+    font-weight: 600;
+}
+
+.country-choice li {
+    list-style: none;
+    margin-top: 10px;
+    color: #4F4F4F;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.country-choice li:hover {
+    color: #F2994A;
+}
+
+#cities:not(.opened) .country-choice {
+    display: none;
 }
 
 .zip-code {

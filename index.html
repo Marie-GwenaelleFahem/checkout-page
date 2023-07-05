@@ -58,13 +58,22 @@
             <div class="location">
                 <div class="country">
                     <p>Country</p>
-                    <div class="form-input">
-                        <img src="src/icons/country-icon.png" alt="icône pays">
-                        <input type="text" name="country" id="" placeholder="Your country...">
-                        <button class="select-country-btn">
-                            <img src="src/icons/expand-icon.png" alt="choix du pays">
-                        </button>
-                        <div class="country-choice" id=""></div>
+                    <div class="form-input" id="cities">
+                        <div class="country-form">
+                            <img src="src/icons/country-icon.png" alt="icône pays">
+                            <input type="text" name="country" id="currentLi" placeholder="Your country...">
+                            <span class="newLi"></span>
+                            <button class="btn-select-country">
+                                <img src="src/icons/expand-icon.png" alt="choix du pays">
+                            </button>
+                        </div>
+                        <ul class="country-choice">
+                            <li id="li1">Albania</li>
+                            <li id="li2">Belgium</li>
+                            <li id="li3">China</li>
+                            <li id="li4">Denmark</li>
+                            <li id="li5">France</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="zip-code">
