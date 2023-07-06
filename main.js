@@ -9,7 +9,25 @@ let toggle = document.querySelector('#cities');
 let currentLi = document.querySelector("#currentLi");
 let newLi = document.querySelector(".newLi");
 
+const myForm = document.querySelector("#myForm");
+let message = document.querySelector("#message");
+
 // Form functions
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); 
+
+  const email = document.querySelector("#email").value.trim();
+  const phone = document.querySelector("#phone").value.trim();
+  const fullName = document.querySelector("#fullName").value.trim();
+  const adress = document.querySelector("#adress").value.trim();
+  const city = document.querySelector("#city").value.trim();
+  const country = document.querySelector(".newLi").value.trim();
+  const mailBox = document.querySelector("#mailBox").value.trim();
+
+}); 
+
+
 
 toggle.onclick = dropdownMenu;
 document.querySelector("#li1").addEventListener("click", selectACountry);

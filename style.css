@@ -101,6 +101,13 @@ section {
     position: relative;
 }
 
+.country-form span {
+    position: absolute;
+    left: 30px;
+    top: 3px;
+    font-size: 13px;
+}
+
 .btn-select-country {
     width: 23px;
     height: 23px;
@@ -108,10 +115,6 @@ section {
     border-radius: 4px;
 }
 
-.country-form span {
-    position: absolute;
-    left: 25px;
-}
 
 .btn-select-country img {
     width: 23px;

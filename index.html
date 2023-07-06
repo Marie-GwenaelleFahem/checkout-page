@@ -17,42 +17,42 @@
         <h1>Checkout</h1>
     </header>
     <section>
-        <div class="form">
+        <div class="form" id="myForm">
             <h2>Contact information</h2>
             <div class="info-user">
                 <p>E-mail</p>
                 <div class="form-input">
-                    <img src="src/icons/mail-icon.png" alt="icône mail">
-                    <input type="text" name="email" id="email" placeholder="Enter your email...">
+                    <img src="src/icons/mail-icon.png" alt="mail icon">
+                    <input type="text" name="email" id="email" placeholder="Enter your email..." required>
                 </div>
             </div>
             <div class="info-user">
                 <p>Phone</p>
                 <div class="form-input">
-                    <img src="src/icons/phone-icon.png" alt="icône mail">
-                    <input type="text" name="email" id="email" placeholder="Enter your email...">
+                    <img src="src/icons/phone-icon.png" alt="phone icon">
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your email..." required>
                 </div>
             </div>
             <h2 class="shipping">Shipping Adress</h2>
             <div class="info-user">
                 <p>Full Name</p>
                 <div class="form-input">
-                    <img src="src/icons/user-icon.png" alt="icône utilisateur">
-                    <input type="text" name="full-name" id="full-name" placeholder="Enter your name...">
+                    <img src="src/icons/user-icon.png" alt="user icon">
+                    <input type="text" name="fullname" id="fullName" placeholder="Enter your name..." required>
                 </div>
             </div>
             <div class="info-user">
                 <p>Adress</p>
                 <div class="form-input">
-                    <img src="src/icons/home_adress-icon.png" alt="icône utilisateur">
-                    <input type="text" name="full-name" id="full-name" placeholder="Your adress...">
+                    <img src="src/icons/home_adress-icon.png" alt="user icon">
+                    <input type="text" name="adress" id="adress" placeholder="Your adress..." required>
                 </div>
             </div>
             <div class="info-user">
                 <p>City</p>
                 <div class="form-input">
-                    <img src="src/icons/location_city-icon.png" alt="icône utilisateur">
-                    <input type="text" name="full-name" id="full-name" placeholder="Your city...">
+                    <img src="src/icons/location_city-icon.png" alt="city icon">
+                    <input type="text" name="city" id="city" placeholder="Your city..." required>
                 </div>
             </div>
             <div class="location">
@@ -60,11 +60,11 @@
                     <p>Country</p>
                     <div class="form-input" id="cities">
                         <div class="country-form">
-                            <img src="src/icons/country-icon.png" alt="icône pays">
-                            <input type="text" name="country" id="currentLi" placeholder="Your country...">
+                            <img src="src/icons/country-icon.png" alt="country icon">
+                            <input type="text" name="country" id="currentLi" placeholder="Your country..." required>
                             <span class="newLi"></span>
                             <button class="btn-select-country">
-                                <img src="src/icons/expand-icon.png" alt="choix du pays">
+                                <img src="src/icons/expand-icon.png" alt="country selection">
                             </button>
                         </div>
                         <ul class="country-choice">
@@ -79,8 +79,8 @@
                 <div class="zip-code">
                     <p>Postal Code</p>
                     <div class="form-input">
-                        <img src="src/icons/mailbox-icon.png" alt="icône pays">
-                        <input type="text" name="country" id="" placeholder="Your postal code...">
+                        <img src="src/icons/mailbox-icon.png" alt="mailbox icon">
+                        <input type="text" name="country" id="mailBox" placeholder="Your postal code..." required>
                     </div>
                 </div>
             </div>
@@ -92,6 +92,7 @@
                 <button id="validateForm">Continue</button>
             </div>
         </div>
+        <p id="message"></p>
         <aside>
             <div class="cart">
                 <div class="item">
